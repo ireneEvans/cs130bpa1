@@ -10,7 +10,7 @@ main: main.o
 git:
 	git add .
 	git commit -m"testing push"
-	git push origin master
+	git push origin main
 
 
 
