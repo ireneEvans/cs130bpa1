@@ -3,9 +3,10 @@
 all: main
 
 
-
-main: 
-	g++ -std=c++11 -o main main.cpp 
+main: main.o
+	g++ -o main main.cpp
+main.o: main.cpp 
+	g++ -c main.cpp
 
 git:
 	git add .
